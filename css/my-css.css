@@ -1,0 +1,65 @@
+.jumbotron {
+ width: 100%;
+    text-align: center;
+    
+}
+
+h1 { 
+  font-family: Helvetica;
+    font-weight: bold; 
+    color: #336A76;
+
+}
+
+.row {
+ padding: 50px; 
+    
+}
+
+
+div.paragraphs {
+ background-color: #EBEFF2;
+margin: 0;
+ padding: 50px;
+}
+
+img.img-responsive {
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p {
+    font-family: Helvetica;
+    font-size: 1.2em;
+}
+
+.firstLetter {
+  float       : left;
+  font-size   : 3.26em;
+  line-height : 0.5;
+  margin      : 0.205em 0.08em 0 0;
+}
+
+.firstLetter + span {
+  margin-left : -0.5em;
+}
+
+
+
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+/*
+.hr {
+    display: block;
+    height: 10px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+*/
