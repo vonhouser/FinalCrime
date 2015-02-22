@@ -7,9 +7,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Why Did Crime Drop?</title>
+ 
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Why Did Crime Drop?</title>
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
@@ -19,17 +20,12 @@
       
     </head>
     <body>
-        <!-- javascript -->
-        <script src="http://code/jquery.com/jquery-latest.min.js">
-        </script>
-        <!--bootstrap javascript -->
+        <!-- javascript>
+        <script type="text/javascript" src="http://code/jquery.com/jquery-latest.min.js">
+        </script> <-->
+        <!--highcharts-->
         
-        <script src="js/bootstrap.min.js">
-        </script>
         
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -67,18 +63,15 @@
 <div class="jumbotron">
     <h1 class="text-align center">What Factors Explain the Decrease in Crime Since the 1990s?</h1>
     
-
-    
-    
     <p class="lead">In 1992, the United States experienced the highest crime rate ever recorded, with both property crime and violent crime climbing steadily from the 1970's. After 1992, the crime rate began to drop, and continues to stay low. For the last two decade, pretty much everyone and every thing under the sun has been given (or taken) credit. From the 1994 Crime Act, to mayorial prowess of every major city, to mandatory minimum sentancing, everyone thinks their policies are what caused the drop. As is usually the case with large-scale social phenomenon, it's complicated.  </p>
   </div>      
 </div>    
     
     
-<div class="row" id="overall">
+<div class="row" id="crimechange">
         <div class="col-md-10 col-md-offset-1">
     <h1 class="text-center">Crime, Prisons, and Law Enforcement</h1>
-        <img src="img/AllFactors2.jpg" class="img-responsive"/>
+        
    </div>
         </div>   <!---end row -->  
         
@@ -90,13 +83,11 @@
      </div>           
 </div> <!---end row -->  
     
-
        
-<div class="row images" id="motor">
     <div class="col-md-10 col-md-offset-1">
-     <h1 class="text-center">Carjack This! </h1>
-        <img src="img/vehicleonly.jpg" class="img-responsive" />
-    </div>
+        <div id="crimechart" style="height: 600px; margin: 0 auto 0.5in">    
+
+  </div>       
 </div>  <!---end row -->   
         
         <div class="row paragraphs">
@@ -106,7 +97,6 @@
 
  </div>    <!---end row -->   
         
-
     
 <div class="row images" id="property">   
     <div class="col-md-10 col-md-offset-1">
@@ -127,20 +117,7 @@
 <!-- please do not remove this line -->
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-     <!--   <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>  -->        
+        
   <footer class="row">
         <div class="container">
         <div class="row">
@@ -153,6 +130,14 @@
         </div>
         </div>
       </footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+        </script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+        
+        <!--bootstrap javascript -->
+        
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 
     </body>
 </html>
