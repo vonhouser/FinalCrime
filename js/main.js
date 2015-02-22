@@ -27,7 +27,7 @@ $(function () {
         },
         series: [{
             name: 'Change in the number of violent crimes per 100,000 since 2010',
-            color: 'rgba(125,180,181,.8)',
+            color: 'rgba(125,180,181,1)',
             data: [-255, 142, -95, 230, 92, 26, -63, -55, -79, 4]
         },
                 ]
@@ -105,3 +105,56 @@ $(function () {
     });
 });
     
+//Scripts for Baltimore Detroit Comparison
+$(function () {
+    $('#Detroit').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Violent Crimes per 100,000'
+        },
+        subtitle: {
+            text: 'Source: Bureau of Justice Statistics'
+        },
+        xAxis: {
+            categories: ['2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012'],
+           
+                 labels: {
+                style: {
+                    color: '#C2CBCE'
+        }
+        }
+        },
+        yAxis: {
+            labels:{enabled: false},
+            title: {
+                text: '',
+                 labels: {
+                style: {
+                    color: '#C2CBCE'
+        }
+                 }
+        }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: false
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+            name: 'Detroit',
+            data: [2073,2018,1740,2358,2419,2287,1985,
+1992,2378,2137,2123],
+             color: '#7DB4B5',
+            
+        }, {
+            name: 'Baltimore',
+            data: [2055, 1735,1839,1755,1697,1631,1589,1513,1500,1418,1405],
+             color: '#680148',
+        }]
+    });
+});
