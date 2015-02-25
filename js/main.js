@@ -44,7 +44,7 @@ $(function () {
             text: 'Top Ten Most Violent Cities',
             style: {
                 color: '#7DB4B5',
-                font: 'bold 26px "Trebuchet MS", Verdana, sans-serif'
+                font: 'bold 36px "Trebuchet MS", Verdana, sans-serif'
             }
             
         
