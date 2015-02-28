@@ -7,8 +7,10 @@ $(function () {
         },
         title: {
             text: 'Change in Violent Crime Since 2010',
-            color: 'rgba(104,1,72,1)',
-       
+            style: {
+            color: '#FF6F40',
+            font: 'bold 36px "Trebuchet MS", Verdana, sans-serif'
+            }
         },
         xAxis: {
             categories: ['Detroit',
@@ -27,7 +29,7 @@ $(function () {
         },
         series: [{
             name: 'Change in the number of violent crimes per 100,000 since 2010',
-            color: 'rgba(125,180,181,1)',
+            color: 'rgba(56,66,79,1)',
             data: [-255, 142, -95, 230, 92, 26, -63, -55, -79, 4]
         },
                 ]
@@ -43,7 +45,7 @@ $(function () {
         title: {
             text: 'Top Ten Most Violent Cities',
             style: {
-                color: '#7DB4B5',
+                color: '#FF6F40',
                 font: 'bold 36px "Trebuchet MS", Verdana, sans-serif'
             }
             
@@ -90,14 +92,14 @@ $(function () {
         },
         series: [{
             name: '2010',
-            color: 'rgba(125,180,181,1)',
+            color: 'rgba(56,66,79,.6)',
             data: [2378, 1608, 1500, 1065, 1124, 1160, 1241, 1215, 1071, 915],
             pointPadding: 0.0,
             pointPlacement: -0.0
         },
                  {
             name: '2012',
-            color: 'rgba(224,239,241,.6)',
+            color: 'rgba(56,66,79,1)',
             data: [2123, 1750, 1405, 1295, 1216, 1186, 1178, 1160, 993, 919],
             pointPadding: 0.2,
             pointPlacement: -0.0
@@ -112,7 +114,12 @@ $(function () {
             type: 'line'
         },
         title: {
-            text: 'Violent Crimes per 100,000'
+            text: 'Violent Crimes per 100,000',
+            text: 'Top Ten Most Violent Cities',
+            style: {
+                color: '#FF6F40',
+                font: 'bold 36px "Trebuchet MS", Verdana, sans-serif'
+            }
         },
         subtitle: {
             text: 'Source: Bureau of Justice Statistics'
@@ -149,12 +156,12 @@ $(function () {
             name: 'Detroit',
             data: [2073,2018,1740,2358,2419,2287,1985,
 1992,2378,2137,2123],
-             color: '#7DB4B5',
+             color: '#FF6F40',
             
         }, {
             name: 'Baltimore',
             data: [2055, 1735,1839,1755,1697,1631,1589,1513,1500,1418,1405],
-             color: '#680148',
+             color: '#38424F',
         }]
     });
 });
